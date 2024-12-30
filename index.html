@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist Clinic Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dentist Clinic Management System</h1>
+    </header>
+
+    <div class="container">
+        <section id="patient-registration">
+            <h2>Patient Registration</h2>
+            <form id="registration-form">
+                <input type="text" id="patient-name" placeholder="Enter Patient Name" required>
+                <input type="email" id="patient-email" placeholder="Enter Patient Email" required>
+                <input type="tel" id="patient-phone" placeholder="Enter Phone Number" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="appointment-scheduling">
+            <h2>Schedule Appointment</h2>
+            <form id="appointment-form">
+                <input type="text" id="appointment-patient-id" placeholder="Patient ID" required>
+                <input type="datetime-local" id="appointment-time" required>
+                <button type="submit">Schedule</button>
+            </form>
+        </section>
+
+        <section id="payment">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <input type="number" id="payment-amount" placeholder="Enter Payment Amount" required>
+                <input type="text" id="payment-method" placeholder="Payment Method (e.g., Credit Card)" required>
+                <button type="submit">Process Payment</button>
+            </form>
+        </section>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
